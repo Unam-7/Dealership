@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+.top_menu {
+    display: flex;
+    margin-right: 50px;
+}
+header h2 {
+    margin: 10px;
+}
+#second {
+  display:flex;
+  width: 80%;
+  justify-content: center;
+}
+aside {
+    margin: 20px 20px 0px 0px;
+    float: right;
+    background-color: aquamarine;
+    padding: 10px;
+    justify-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+/* main {
+    background-color: red;
+    margin: 0PX 50PX 0PX 50px;
+    padding: 10px;
+    width: 60%;
+} */
+.deal_list {
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start ;
+}

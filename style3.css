@@ -1,0 +1,19 @@
+
+
+
+
+/* FILTER  */
+#second {
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(205, 64, 233);
+    justify-content: center;
+    width: 100%;
+    position:absolute;
+}
+.filter {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 10px;
+}

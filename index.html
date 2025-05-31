@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style4.css">
     <script src="java.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
+    <div id="top">
+        <header>
         <div class="sign">
             <h2>GT-MZANTSI</h2>  
         </div>
@@ -22,170 +23,193 @@
             <h2>BUY CAR</h2>
             <h2>SELL CAR</h2>
         </div>
-    </header>
+        </header>
+    </div>
     <div id="second">
-        <div class="search">
-            <input type="text" id="main_search" placeholder="Make">
-            <input type="text" id="main_search2" placeholder="Model">
+        <div class="filter">
+            <input list="car-makes" id="car-make" name="car-make" placeholder="MAKE">
+            <datalist id="car-makes">
+                <option value="Toyota">
+                <option value="Honda">
+                <option value="Ford">
+                <option value="Chevrolet">
+                <option value="BMW">
+                <option value="Mercedes-Benz">
+                <option value="Audi">
+                <option value="Nissan">
+                <option value="Hyundai">
+                <option value="Kia">
+            </datalist>
+            <input list="car-makes" id="car-make" name="car-make" placeholder="MODEL">
+            <datalist id="car-makes">
+                <option value="Toyota">
+                <option value="Honda">
+                <option value="Ford">
+                <option value="Chevrolet">
+                <option value="BMW">
+                <option value="Mercedes-Benz">
+                <option value="Audi">
+                <option value="Nissan">
+                <option value="Hyundai">
+                <option value="Kia">
+            </datalist>
         </div>
-        <div class="price">
-            <input type="text" id="price_fil" placeholder="Min Price">
-            <input type="text" id="price_fil" placeholder="Max Price">
+        <div class="filter">
+            <input list="car-makes" id="car-make" name="car-make" placeholder="MIN PRICE">
+            <datalist id="car-makes">
+                <option value="Toyota">
+                <option value="Honda">
+                <option value="Ford">
+                <option value="Chevrolet">
+                <option value="BMW">
+                <option value="Mercedes-Benz">
+                <option value="Audi">
+                <option value="Nissan">
+                <option value="Hyundai">
+                <option value="Kia">
+            </datalist>
+            <input list="car-makes" id="car-make" name="car-make" placeholder="MAX PRICE">
+            <datalist id="car-makes">
+                <option value="Toyota">
+                <option value="Honda">
+                <option value="Ford">
+                <option value="Chevrolet">
+                <option value="BMW">
+                <option value="Mercedes-Benz">
+                <option value="Audi">
+                <option value="Nissan">
+                <option value="Hyundai">
+                <option value="Kia">
+            </datalist>
         </div>
-        <div class="year">
-            <input type="text" id="price_fil" placeholder="Min Year">
-            <input type="text" id="price_fil" placeholder="Max Year">
+        <div class="filter">
+            <input list="car-makes" id="car-make" name="car-make" placeholder="MIN YEAR">
+            <datalist id="car-makes">
+                <option value="Toyota">
+                <option value="Honda">
+                <option value="Ford">
+                <option value="Chevrolet">
+                <option value="BMW">
+                <option value="Mercedes-Benz">
+                <option value="Audi">
+                <option value="Nissan">
+                <option value="Hyundai">
+                <option value="Kia">
+            </datalist>
+            <input list="car-makes" id="car-make" name="car-make" placeholder="MAX YEAR">
+            <datalist id="car-makes">
+                <option value="Toyota">
+                <option value="Honda">
+                <option value="Ford">
+                <option value="Chevrolet">
+                <option value="BMW">
+                <option value="Mercedes-Benz">
+                <option value="Audi">
+                <option value="Nissan">
+                <option value="Hyundai">
+                <option value="Kia">
+            </datalist>
         </div>
-        <div class="millage">
-            <input type="text" id="price_fil" placeholder="Min Millage">
-            <input type="text" id="price_fil" placeholder="Max Millage">
+        <div class="filter">
+            <input list="car-makes" id="car-make" name="car-make" placeholder="MIN MILLAGE">
+            <datalist id="car-makes">
+                <option value="Toyota">
+                <option value="Honda">
+                <option value="Ford">
+                <option value="Chevrolet">
+                <option value="BMW">
+                <option value="Mercedes-Benz">
+                <option value="Audi">
+                <option value="Nissan">
+                <option value="Hyundai">
+                <option value="Kia">
+            </datalist>
+            <input list="car-makes" id="car-make" name="car-make" placeholder="MAX MILLAGE">
+            <datalist id="car-makes">
+                <option value="Toyota">
+                <option value="Honda">
+                <option value="Ford">
+                <option value="Chevrolet">
+                <option value="BMW">
+                <option value="Mercedes-Benz">
+                <option value="Audi">
+                <option value="Nissan">
+                <option value="Hyundai">
+                <option value="Kia">
+            </datalist>
         </div>
-        <div class="seat">
-            <input type="text" id="price_fil" placeholder="Min Seat">
-            <input type="text" id="price_fil" placeholder="Min Seat">
+    </div>
+    <div class="top">
+        <div class="cala">
+            <div class="head">
+                <h2>Top Rated</h2>
+            </div>
+            <div id="list0">
+                    <button type="button" id="Press">Kia Sportage 1.6CRDi EX</button>
+                    <button type="button" id="Press">VW Polo 1.0 TSI 85kW R-Line</button>
+                    <button type="button" id="Press">Mercedes-Benz GLC220d 4Matic Avantgarde</button>
+                    <button type="button" id="Press">Mazda CX-60 3.3 Takumi</button>
+                    <button type="button" id="Press">Review: Mini Countryman S ALL4</button>
+            </div>
         </div>
     </div>
     <aside>
-        <div class="side_content">
-            <table>
-                <tr>
-                    <th>CAR EVENTS</th>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="." class="side_cards">
-                            <img src="Emage/back.jpg">
-                            <p>fuuiwfbibubviubv</p>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="." class="side_cards">
-                            <img src="Emage/images3.jpeg">
-                            <p>udhbciuahbiuhabu</p>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="." class="side_cards">
-                            <img src="Emage/back.jpg">
-                            <p>ihiuyhiuuyh</p>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="." class="side_cards">
-                            <img src="Emage/logo.png">
-                            <p>hbvihbviuhbi</p>
-                        </a>
-                    </td>
-                </tr>
-            </table>
+        <div class="side_title">
+            <h2>Car Events</h2> 
+        </div>
+        <div class="wrapper">
+            <div class="cards">
+                <div class="cards_content">
+                    <img src="Emage/back.jpg" class="side_emage">
+                    <div class="info">
+                        <h1>Heading</h1>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="cards_content">
+                    <img src="Emage/back.jpg" class="side_emage">
+                    <div class="info">
+                        <h1>Heading</h1>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="cards_content">
+                    <img src="Emage/back.jpg" class="side_emage">
+                    <div class="info">
+                        <h1>Heading</h1>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </aside>
-    <main id="into">
-        <div id="deals">
-            <div class="title_deals">
-                <h3>Deals</h3>
+    <main>
+        <div class="main_title">
+            <h2 class="halala">LATEST DEALS</h2>
+        </div>
+        <div class= "Content">
+            <div Class="item">
+                <a href="#"><img src="Emage/back.jpg" class="item_emage"></a>
+                <div class="info">
+                    <p>Living With It Volkswagen Polo 1,0 TSI 70 kW Life Manual</p></img>
+                </div>
             </div>
-            <div id="container">
-                <div class="wrap">
-                    <ul class="deal_list">
-                        <li class="cards">
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                             <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                 <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="." class="card_link">
-                                <img src="Emage/back.jpg" class="card_emage">
-                                <p class="badge">bfvbufhbhfb</p>
-                                <h2 class="card_title">fhbkhfb</h2>
-                            </a>
-                        </li>
-                    </ul>
+            <div Class="item">
+                <a href="#"><img src="Emage/back.jpg" class="item_emage"></a>
+                <div class="info">
+                    <p>Living With It Volkswagen Polo 1,0 TSI 70 kW Life Manual</p></img>
+                </div>
+            </div>
+            <div Class="item">
+                <a href="#"><img src="Emage/back.jpg" class="item_emage"></a>
+                <div class="info">
+                    <p>Living With It Volkswagen Polo 1,0 TSI 70 kW Life Manual</p></img>
+                </div>
+            </div>
+            <div Class="item">
+                <a href="#"><img src="Emage/back.jpg" class="item_emage"></a>
+                <div class="info">
+                    <p>Living With It Volkswagen Polo 1,0 TSI 70 kW Life Manual</p></img>
                 </div>
             </div>
         </div>
@@ -196,99 +220,20 @@
                 <h2 class="news">
                     LATEST NEWS
                 </h2>
-                <div class="news_content">
-                    <table>
-                        <tr>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                            <td class="table_content">
-                                <img src="Emage/back.jpg">
-                                <p>uhgvbb</p>
-                            </td>
-                        </tr>
-                    </table>
+            </div>
+            <div class="news_content">
+                <table>
+                    <tr>
+                        <td class="table_content">
+                            <img src="Emage/back.jpg" class="table_emage">
+                            <p>uhgvbb</p>
+                        </td>
+                        <td class="table_content">
+                            <img src="Emage/back.jpg" class="table_emage">
+                            <p>uhgvbb</p>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
