@@ -12,22 +12,35 @@
 </head>
 <body>
     <div id="top">
-        <header>
+        <header style="position: ce;">
         <div class="sign">
-            <h2>GT-MZANTSI</h2>  
+            <h2 id="menu">GT-MZANTSI</h2>  
         </div>
         <div class="top_menu">
-            <h2>HOME</h2>
-            <h2>SEARCH</h2>
-            <h2>NEWS</h2>
-            <h2>BUY CAR</h2>
-            <h2>SELL CAR</h2>
+            <h2 class="menu_item">HOME</h2>
+            <h2 class="menu_item">SEARCH</h2>
+            <h2 class="menu_item">NEWS</h2>
+            <h2 class="menu_item">BUY CAR</h2>
+            <h2 class="menu_item">SELL CAR</h2>
+        </div>
+        <div class="profIcons">
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="sett">
+                <i class="fa-solid fa-gear"></i>
+            </div>
         </div>
         </header>
     </div>
-    <div id="second">
-        <div class="filter">
-            <input list="car-makes" id="car-make" name="car-make" placeholder="MAKE">
+    <div class="test">
+        <button class="press">
+            <h2 class="get">SEARCH</h2>
+        </button>
+    </div>
+    <div id="second">   
+        <div class="filter_list">
+            <input id="car-make"  placeholder="MAKE">
             <datalist id="car-makes">
                 <option value="Toyota">
                 <option value="Honda">
@@ -40,35 +53,7 @@
                 <option value="Hyundai">
                 <option value="Kia">
             </datalist>
-            <input list="car-makes" id="car-make" name="car-make" placeholder="MODEL">
-            <datalist id="car-makes">
-                <option value="Toyota">
-                <option value="Honda">
-                <option value="Ford">
-                <option value="Chevrolet">
-                <option value="BMW">
-                <option value="Mercedes-Benz">
-                <option value="Audi">
-                <option value="Nissan">
-                <option value="Hyundai">
-                <option value="Kia">
-            </datalist>
-        </div>
-        <div class="filter">
-            <input list="car-makes" id="car-make" name="car-make" placeholder="MIN PRICE">
-            <datalist id="car-makes">
-                <option value="Toyota">
-                <option value="Honda">
-                <option value="Ford">
-                <option value="Chevrolet">
-                <option value="BMW">
-                <option value="Mercedes-Benz">
-                <option value="Audi">
-                <option value="Nissan">
-                <option value="Hyundai">
-                <option value="Kia">
-            </datalist>
-            <input list="car-makes" id="car-make" name="car-make" placeholder="MAX PRICE">
+            <input  placeholder="MODEL">
             <datalist id="car-makes">
                 <option value="Toyota">
                 <option value="Honda">
@@ -82,8 +67,8 @@
                 <option value="Kia">
             </datalist>
         </div>
-        <div class="filter">
-            <input list="car-makes" id="car-make" name="car-make" placeholder="MIN YEAR">
+        <div class="filter_list">
+            <input  placeholder="MIN PRICE">
             <datalist id="car-makes">
                 <option value="Toyota">
                 <option value="Honda">
@@ -96,7 +81,7 @@
                 <option value="Hyundai">
                 <option value="Kia">
             </datalist>
-            <input list="car-makes" id="car-make" name="car-make" placeholder="MAX YEAR">
+            <input placeholder="MAX PRICE">
             <datalist id="car-makes">
                 <option value="Toyota">
                 <option value="Honda">
@@ -110,8 +95,8 @@
                 <option value="Kia">
             </datalist>
         </div>
-        <div class="filter">
-            <input list="car-makes" id="car-make" name="car-make" placeholder="MIN MILLAGE">
+        <div class="filter_list">
+            <input  placeholder="MIN YEAR">
             <datalist id="car-makes">
                 <option value="Toyota">
                 <option value="Honda">
@@ -124,7 +109,7 @@
                 <option value="Hyundai">
                 <option value="Kia">
             </datalist>
-            <input list="car-makes" id="car-make" name="car-make" placeholder="MAX MILLAGE">
+            <input  placeholder="MAX YEAR">
             <datalist id="car-makes">
                 <option value="Toyota">
                 <option value="Honda">
@@ -137,21 +122,48 @@
                 <option value="Hyundai">
                 <option value="Kia">
             </datalist>
+        </div>
+        <div class="filter_list">
+            <input  placeholder="MIN MILLAGE">
+            <datalist id="car-makes">
+                <option value="Toyota">
+                <option value="Honda">
+                <option value="Ford">
+                <option value="Chevrolet">
+                <option value="BMW">
+                <option value="Mercedes-Benz">
+                <option value="Audi">
+                <option value="Nissan">
+                <option value="Hyundai">
+                <option value="Kia">
+            </datalist>
+            <input  placeholder="MAX MILLAGE">
+            <datalist id="car-makes">
+                <option value="Toyota">
+                <option value="Honda">
+                <option value="Ford">
+                <option value="Chevrolet">
+                <option value="BMW">
+                <option value="Mercedes-Benz">
+                <option value="Audi">
+                <option value="Nissan">
+                <option value="Hyundai">
+                <option value="Kia">
+            </datalist>
+        </div>
+    </div>    
+    <div class="cala">
+        <div class="head">
+            <h2>Top Rated</h2>
+        </div>
+        <div id="list0">
+            <button type="button" id="Press">Kia Sportage 1.6CRDi EX</button>
+            <button type="button" id="Press">VW Polo 1.0 TSI 85kW R-Line</button>
+            <button type="button" id="Press">Mercedes-Benz GLC220d 4Matic Avantgarde</button>
+            <button type="button" id="Press">Mazda CX-60 3.3 Takumi</button>
+            <button type="button" id="Press">Review: Mini Countryman S ALL4</button>
         </div>
     </div>
-    <div class="top">
-        <div class="cala">
-            <div class="head">
-                <h2>Top Rated</h2>
-            </div>
-            <div id="list0">
-                    <button type="button" id="Press">Kia Sportage 1.6CRDi EX</button>
-                    <button type="button" id="Press">VW Polo 1.0 TSI 85kW R-Line</button>
-                    <button type="button" id="Press">Mercedes-Benz GLC220d 4Matic Avantgarde</button>
-                    <button type="button" id="Press">Mazda CX-60 3.3 Takumi</button>
-                    <button type="button" id="Press">Review: Mini Countryman S ALL4</button>
-            </div>
-        </div>
     </div>
     <aside>
         <div class="side_title">

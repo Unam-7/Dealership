@@ -3,31 +3,30 @@
 // buttons.array.forEach(button => {
 //     button.addEventListe
 // });
-let slideIndex = 1;
-showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+const search = document.getElementById("get");
+const items = document.getElementsByClassName("filter_list");
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+function unam(e) {
+  // Convert HTMLCollection to array and loop over all items
+  Array.from(items).forEach(item => {
+    if (e.target === search) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
 }
+search.addEventListener("click", unam(e));
+
+
+
+
+// const input = document.getElementById('myInput');
+
+// input.addEventListener('click', function(event) {
+//   console.log('Input was clicked!');
+//   // You can also access the input value:
+//   console.log('Current value:', event.target.value);
+// });

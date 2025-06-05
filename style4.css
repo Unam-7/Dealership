@@ -6,27 +6,49 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: antiquewhite;
+    align-items:baseline;
+    width: 80%;
 }
 .top_menu {
     display: flex;
     margin-right: 50px;
+    position: relative;
 }
-header h2 {
+#menu {
     margin: 10px;
-}/* TOP */
+    font-size: 25px;
+    font-weight: 1000;
+}
+.menu_item { 
+    margin: 0px 15px 0px 0px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.profIcons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10rem;
+    font-size: 25px;
+}
+.profile {
+    margin-right: 10px;
+}
+ /* TOP */
 .cala {
-  background-color: brown;
+    width: 100%;
+    background-color: brown;
+    position: absolute;
 }
 .head {
-  background-color: rgba(59, 159, 247, 0.836);
+    background-color: rgba(59, 159, 247, 0.836);
 }
 #Press{
-    margin: 10px 10px;
+    /* margin: 10px 10px; */
     border: 3px solid white;
     border-radius: 30em;
     background-color: rgba(255, 79, 79);
 }
-
+/* SECOND */
 #second {
     display:flex;
     flex-direction: row;
@@ -35,7 +57,7 @@ header h2 {
     width: 100%;
     position:absolute;
 }
-.filter {
+.filter_list {
     display: flex;
     flex-direction: column;
     padding: 0px;
