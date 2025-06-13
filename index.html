@@ -4,41 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style4.css">
-    <script src="java.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <!-- <script src="java2.js" defer></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="top">
-        <header style="position: ce;">
-        <div class="sign">
-            <h2 id="menu">GT-MZANTSI</h2>  
-        </div>
-        <div class="top_menu">
-            <h2 class="menu_item">HOME</h2>
-            <h2 class="menu_item">SEARCH</h2>
-            <h2 class="menu_item">NEWS</h2>
-            <h2 class="menu_item">BUY CAR</h2>
-            <h2 class="menu_item">SELL CAR</h2>
-        </div>
-        <div class="profIcons">
-            <div class="profile">
-                <i class="fa-solid fa-user"></i>
+    <header>
+        <div id="top">
+            <div class="topContent">
+                <div class="sign">
+                    <h2 id="menu">GT-MZANTSI</h2>  
+                </div>
+                <div class="top_menu">
+                    <a href="second.html">
+                        <h2 class="menu_item">HOME</h2>
+                    </a>
+                    <a href="">
+                        <h2 class="menu_item">SEARCH</h2>
+                    </a>
+                    <a href="">
+                        <h2 class="menu_item">NEWS</h2>
+                    </a>
+                    <a href="">
+                        <h2 class="menu_item">BUY CAR</h2>
+                    </a>
+                    <a href="">
+                        <h2 class="menu_item">SELL CAR</h2>
+                    </a>
+                </div>
+                <div class="profIcons">
+                    <div class="profile">
+                        <a href=""><h2 class="menu_item">ACCOUNT</h2></a>
+                        <a href=""><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <div class="sett">
+                        <a href=""><h2 class="menu_item">SETTINGS</h2></a>
+                        <a href=""><i class="fa-solid fa-gear"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="sett">
-                <i class="fa-solid fa-gear"></i>
+        </div>
+        <div id="intro">
+            <div class="slog">
+                <h3 class="firstName">Catch The Wave</h3>
+                <h3 class="secondName">Buy & Sell With Ease</h3>
+            </div>
+            <div class="logDialog">
+                <div class="createAccounntTitle">
+                    <h4>Create Account</h4>
+                </div>
+                <div class="inputName">
+                    <div class="nameInput">
+                        <label for="name">Name</label>
+                        <input type="name" placeholder="Name">
+                    </div>
+                    <div class="surInput">
+                        <label for="surnameInput">Surname</label>
+                        <input type="Surname" placeholder="Surname">
+                    </div>
+                </div>
+                <div class="inputEmail">
+                    <label for="emailInput">Email</label>
+                    <input type="emailInput" placeholder="Email Address">
+                </div>
+                <div class="inputNumber">
+                    <label for="code">Phone Number</label>
+                    <select id="code" name="code">
+                        <option value="+27">+27</option>
+                        <option value="+24">+24</option>
+                    </select>
+                    <input type="Phone" placeholder="Pone Number">
+                </div>
             </div>
         </div>
-        </header>
-    </div>
-    <div class="test">
-        <button class="press">
-            <h2 class="get">SEARCH</h2>
-        </button>
-    </div>
-    <div id="second">   
+    </header>
+     <!-- <div id="second">   
         <div class="filter_list">
             <input id="car-make"  placeholder="MAKE">
             <datalist id="car-makes">
@@ -151,44 +193,51 @@
                 <option value="Kia">
             </datalist>
         </div>
-    </div>    
-    <div class="cala">
-        <div class="head">
-            <h2>Top Rated</h2>
-        </div>
-        <div id="list0">
-            <button type="button" id="Press">Kia Sportage 1.6CRDi EX</button>
-            <button type="button" id="Press">VW Polo 1.0 TSI 85kW R-Line</button>
-            <button type="button" id="Press">Mercedes-Benz GLC220d 4Matic Avantgarde</button>
-            <button type="button" id="Press">Mazda CX-60 3.3 Takumi</button>
-            <button type="button" id="Press">Review: Mini Countryman S ALL4</button>
-        </div>
-    </div>
-    </div>
+    </div>    -->
     <aside>
         <div class="side_title">
             <h2>Car Events</h2> 
         </div>
+        <!-- <div id="list0">
+                <button type="button" id="Press">Kia Sportage 1.6CRDi EX</button>
+                <button type="button" id="Press">VW Polo 1.0 TSI 85kW R-Line</button>
+                <button type="button" id="Press">Mercedes-Benz GLC220d 4Matic Avantgarde</button>
+                <button type="button" id="Press">Mazda CX-60 3.3 Takumi</button>
+                <button type="button" id="Press">Review: Mini Countryman S ALL4</button>
+        </div> -->
         <div class="wrapper">
             <div class="cards">
                 <div class="cards_content">
                     <img src="Emage/back.jpg" class="side_emage">
                     <div class="info">
-                        <h1>Heading</h1>
+                        <h4>Heading</h4>
                         <a href="#" class="btn">Read More</a>
                     </div>
                 </div>
+            </div>
+            <div class="cards">
                 <div class="cards_content">
                     <img src="Emage/back.jpg" class="side_emage">
                     <div class="info">
-                        <h1>Heading</h1>
+                        <h4>Heading</h4>
                         <a href="#" class="btn">Read More</a>
                     </div>
                 </div>
+            </div>
+            <div class="cards">
                 <div class="cards_content">
                     <img src="Emage/back.jpg" class="side_emage">
                     <div class="info">
-                        <h1>Heading</h1>
+                        <h4>Heading</h4>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cards_content">
+                    <img src="Emage/back.jpg" class="side_emage">
+                    <div class="info">
+                        <h4>Heading</h4>
                         <a href="#" class="btn">Read More</a>
                     </div>
                 </div>
@@ -196,8 +245,10 @@
         </div>
     </aside>
     <main>
-        <div class="main_title">
-            <h2 class="halala">LATEST DEALS</h2>
+        <div class="cala">
+            <div class="head">
+                <h2>New Sale</h2>
+            </div>   
         </div>
         <div class= "Content">
             <div Class="item">
@@ -226,26 +277,13 @@
             </div>
         </div>
     </main>
-    <div id="news_cont">
-        <div class="latest_news">
-            <div class="title_news">
-                <h2 class="news">
-                    LATEST NEWS
-                </h2>
-            </div>
-            <div class="news_content">
-                <table>
-                    <tr>
-                        <td class="table_content">
-                            <img src="Emage/back.jpg" class="table_emage">
-                            <p>uhgvbb</p>
-                        </td>
-                        <td class="table_content">
-                            <img src="Emage/back.jpg" class="table_emage">
-                            <p>uhgvbb</p>
-                        </td>
-                    </tr>
-                </table>
+    <div id="sellCont">
+        <div class="sellTitle">
+            <h4>Sell Car</h4>
+        </div>
+        <div class="sellInfor">
+            <div class="carDetails">
+                
             </div>
         </div>
     </div>

@@ -1,32 +1,43 @@
-// const buttons = document.querySelector("[data-courousel-button]")
 
-// buttons.array.forEach(button => {
-//     button.addEventListe
-// });
-
-const search = document.getElementById("get");
-const items = document.getElementsByClassName("filter_list");
-
-
-function unam(e) {
-  // Convert HTMLCollection to array and loop over all items
-  Array.from(items).forEach(item => {
-    if (e.target === search) {
-      item.style.display = "";
-    } else {
-      item.style.display = "none";
-    }
+  // Highlight menu items on click
+  const menuItems = document.querySelectorAll('.menu_item');
+  menuItems.forEach(item => {
+    item.addEventListener('click', function() {
+      menuItems.forEach(i => i.classList.remove('active'));
+      this.classList.add('active');
+    });
   });
-}
-search.addEventListener("click", unam(e));
 
+  // Form Validation
+  const nameInput = document.querySelector('input[placeholder="Name"]');
+  const surnameInput = document.querySelector('input[placeholder="Surname"]');
+  const emailInput = document.querySelector('input[placeholder="Email Address"]');
+  const phoneInput = document.querySelector('input[placeholder="Pone Number"]');
 
+  [nameInput, surnameInput, emailInput, phoneInput].forEach(input => {
+    input.addEventListener('blur', () => {
+      if (input.value.trim() === "") {
+        input.style.border = "2px solid red";
+      } else {
+        input.style.border = "2px solid green";
+      }
+    });
+  });
 
+  // Interactive "Read More" Button
+  const readMoreButtons = document.querySelectorAll('.btn');
+  readMoreButtons.forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      alert("Redirecting to detailed car info...");
+    });
+  });
 
-// const input = document.getElementById('myInput');
+  // Toggle Profile/Settings Icons
+  document.querySelector('.profile').addEventListener('click', () => {
+    alert("Go to your account profile.");
+  });
+  document.querySelector('.sett').addEventListener('click', () => {
+    alert("Settings page loading...");
+  });
 
-// input.addEventListener('click', function(event) {
-//   console.log('Input was clicked!');
-//   // You can also access the input value:
-//   console.log('Current value:', event.target.value);
-// });
