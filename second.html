@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/2style.css">
-    <script src="javatest.js" defer></script>
+    <link rel="stylesheet" href="/twostyle.css">
+    <script src="second.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -67,30 +67,33 @@
             </select>
         </div>
         <div class="filter-group">
-            <label for="price">Min Price</label>
-            <select id="bodyType" name="bodyType">
+            <label for="minPrice">Min Price</label>
+            <select id="minPrice" name="minPrice">
                 <option value="">Any Type</option>
+                <option value="20000">$20,000</option>
+                <option value="40000">$40,000</option>
+                <option value="60000">$60,000</option>
             </select>
         </div>
         <div class="filter-group">
-            <label for="price">Max Price</label>
-            <select id="bodyType" name="bodyType">
+            <label for="maxPrice">Max Price</label>
+            <select id="maxPrice" name="maxPrice">
                 <option value="">Any Type</option>
+                <option value="20000">$20,000</option>
+                <option value="40000">$40,000</option>
+                <option value="60000">$60,000</option>
             </select>
         </div>
         <div class="filter-group">
-            <label for="year">Min Year</label>
-            <select id="year" name="year">
+            <label for="minYear">Min Year</label>
+            <select id="minYear" name="minYear">
                 <option value="">Any Year</option>
             </select>
         </div>
         <div class="filter-group">
-            <label for="make">Max Year</label>
-            <select id="make" name="make">
-                <option value="">All Makes</option>
-                <option value="bmw">BMW</option>
-                <option value="toyota">Toyota</option>
-                <option value="honda">Honda</option>
+            <label for="maxYear">Max Year</label>
+            <select id="maxYear" name="maxYear">
+                <option value="">Any Year</option>
             </select>
         </div>
         <div class="filter-group">

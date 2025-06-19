@@ -7,15 +7,15 @@ body {
 }
 
 #top {
-    justify-content: center;
-    margin: 0px;
-    background-color: rgb(255, 106, 193);
-    position: relative;
-    margin: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0px 0px 100rem 0px rgba(255, 106, 193);
+  position: fixed; /* Keep it at the top while scrolling */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgb(255, 106, 193);
+  box-shadow: 0px 0px 50px rgba(255, 106, 193, 0.7);
+  padding: 1rem 0; /* Optional: control header height */
+  width: 100%;
 }
 a {
     color: black;
@@ -129,9 +129,19 @@ aside {
     border-right: none;
     width: 25%;
 }
-aside:hover {
-    box-shadow: 2px grey;
+.cards {
+    border: 2px solid transparent;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    border-radius: 8px;
 }
+
+.cards:hover {
+    border: 2px solid #007BFF; /* Or any color you like */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* Optional glow effect */
+    background-color: #f9f9f9; /* Optional background on hover */
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -163,7 +173,7 @@ aside:hover {
     grid-template-columns: repeat(auto-fit,minmax(25em,1fr));
     grid-gap: 20px;
     justify-content: space-between;
-    /* background-color: rgba(255, 135, 135, 0.658); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.144);
 }
 .item_emage{
     /* width: 600px;
@@ -213,18 +223,21 @@ aside:hover {
     z-index: 3;
     color: #fff;
 }
-.moreBtn {
-    padding-top: 10%;
-    width: 100%;
-    background-color: red;
-    justify-content: center;
+#loadMoreBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.moreBtn button {
-    justify-content: center;
+
+#loadMoreBtn:hover {
+    background-color: #f676fa;
 }
-.nextSearchPage {
-    height: 30px;
-}
+
 /* Sell option  */
 .vehicle-form2 {
     width: 90%;
